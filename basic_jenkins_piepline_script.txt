@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+
+    stages{
+        stage("printing hello"){
+            steps{
+                echo "Hi there jenkin's here"
+            }
+        }
+        stage("make a folder"){
+            steps{
+                sh "mkdir satishfolder"
+            }
+        }
+    }
+}
